@@ -1,0 +1,101 @@
+/* === General Styles === */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* === Navbar === */
+.navbar-nav {
+    text-align: center;
+}
+
+/* === About Section === */
+.about-img img {
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+    filter: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-img img:hover {
+    transform: scale(1.05);
+}
+
+/* === Tombol Explore Collection === */
+.btn-custom {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-custom:hover {
+    background-color: #333 !important;
+}
+
+/* === Footer Styles === */
+.footer {
+    background-color: #413003; /* Warna coklat */
+    color: #fff;
+    padding: 20px 0; /* Lebih kecil supaya tidak terlalu lebar */
+    text-align: center;
+    font-size: 14px;
+    border-top: 3px solid #5a3e02; /* Garis pemisah lebih halus */
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 600px; /* Membatasi lebar supaya pas dengan teks */
+    margin: 0 auto; /* Membuatnya tetap di tengah */
+}
+
+.logo {
+    font-size: 22px; /* Ukuran lebih kecil */
+    font-weight: bold;
+    margin-bottom: 5px; /* Jarak lebih kecil */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.copyright {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* === Responsive CSS === */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+        bottom: 370px;
+    }
+    .carousel-caption p {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .carousel-caption {
+        bottom: 125px;
+    }
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+    .carousel-caption a {
+        padding: 10px 15px;
+    }
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+
+    .about-img img {
+        max-width: 90%;
+    }
+}
